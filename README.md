@@ -10,4 +10,14 @@
 这是最好的解决方案，但是项目中的一些第三方静态库也用到了，而且第三方库又不能及时更新。所以暂时采用方案2。
 
 ##### 2. 添加缺失的文件
+clone 项目到本地。把文件中的libstdc++库拷贝到对应的目录下。
+```
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/lib/
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/
+```
+添加完成后，重启Xcode。
